@@ -118,3 +118,65 @@ h1 {
 .social-links a:hover {
     opacity: 1;
 }
+
+.skills-carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.carousel-container {
+    display: flex;
+    gap: 2rem;
+    overflow:hidden;
+    width: calc(100% - 100px);
+}
+
+.skill-card {
+    flex: 0 0 calc(33.333% - 1.33rem);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+    min-width: calc(33.333% - 1.33rem);
+    border: 1px solid var(--border-dark);
+}
+
+body.light-mode .skillcard {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-light);
+}
+
+.carousel-button {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    border: 1px solid var(--border-dark);
+}
+
+body.light-mode .carousel-button {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-light);
+}
+
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
