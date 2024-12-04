@@ -365,3 +365,117 @@ body.light-mode footer {
     font-size: 1rem;
     opacity: 0.8;
 }
+
+/* skills.html */
+.search-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(127, 127, 127, 0.2);
+    background: rgba(127, 127, 127, 0.1);
+    color: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(127, 127, 127, 0.15);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.light-mode .search-input {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .search-input:focus {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skills-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.skills {
+    background: rgba(127, 127, 127, 0.1);
+    border: 1px solid rgba(127, 127, 127, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color:inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dark-mode .skills {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .skills {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.skills:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .skills:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .skills:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-content h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.skill-icon {
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skill-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
