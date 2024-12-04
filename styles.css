@@ -264,3 +264,104 @@ body.light-mode footer {
     height: 100%;
     object-fit: contain;
 }
+
+/* myjourney.html */
+.myjourney-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.myjourney-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.myjourney-list:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: rgba(127, 127, 127, 0.3);
+}
+
+.myjourney-item {
+    position: relative;
+    width: 550px;
+    max-width: 75%;
+    margin: 2rem 0;
+}
+
+.myjourney-item.left {
+    align-self: flex-start;
+}
+
+.myjourney-item.right {
+    align-self: flex-end;
+}
+
+.myjourney-item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    background: rgba(127, 127, 127 0.1);
+    border: 1px solid rgba(127, 127, 127, 0.2);
+    border-radius: 12px;
+    padding: 2.5rem;
+    transition: all 0.3s ease;
+    min-height: 100px;
+}
+
+.dark-mode .myjourney-item-link {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .myjourney-item-link {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.myjourney-item-link:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .myjourney-item-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .myjourney-item-link:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.myjourney-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height:100%;
+}
+
+.myjourney-item.right .myjourney-item-content {
+    align-items: flex-end;
+}
+
+.myjourney-item-content h3 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.myjourney-item-content p{
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    opacity: 0.8;
+}
