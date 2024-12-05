@@ -646,3 +646,92 @@ body.light-mode footer {
     background: linear-gradient(to right, var(--accent), #e74c3c);
     border-radius: 2px;
 }
+
+/* Styling for skills pages */
+.myskills-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+}
+.myskills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.myskill-item {
+    width: 100%;
+    background: rgba(127, 127, 127, 0.1);
+    border: 1px solid rgba(127, 127, 127, 0.2);
+    border-radius: 12px;
+    padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dark-mode .myskill-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .myskill-item {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.myskill-item:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .myskill-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .myskill-item:hover {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.myskill-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.myskill-content h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.myskill-details {
+    margin-top: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+/* Ensure the content doesn't interfere with clickability */
+.myskill-content {
+    pointer-events: none;
+}
+
+/* Make sure the expand icon doesn't interfere with clicking */
+.expand-icon {
+    pointer-events: none;
+}
