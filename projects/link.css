@@ -1,0 +1,92 @@
+/* GitHub Links for Projects */
+.GitHub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.GitHub-button {
+    display:block;
+    text-decoration: none;
+    width: 300px;
+    background: rgba(127, 127, 127, 0.1);
+    border: 1px solid rgba(127, 127, 127, 0.2);
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dark-mode .GitHub-button {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.light-mode .GitHub-button {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.GitHub-button:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .GitHub-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .GitHub-button:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.GitHub-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.GitHub-content h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.GitHub-icon {
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.GitHub-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Mobile-Friendliness */
+@media screen and (max-width: 768px) {
+    /* GitHub View */
+    .GitHub-container {
+        margin-top: 1rem;
+    }
+    
+    .GitHub-button {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .GitHub-content h3 {
+        font-size: 1rem;
+    }
+    
+    .GitHub-icon {
+        width: 36px;
+        height: 36px;
+    }
+}
