@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Finch Robot Dance | Jitin Kumar Verma
+        </title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="link.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <a href="../index.html" class="logo">
+                    &lt;/&gt; Jitin Kumar Verma
+                </a>
+                <a href="../myjourney.html">
+                    My Journey
+                </a>
+                <a href="../skills.html">
+                    Skills
+                </a>
+                <a href="../projects.html">
+                    Projects
+                </a>
+                <a href="../resume.html">
+                    Resumé
+                </a>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <div class="hero">
+                <h1>Finch Robot Dance</h1>
+            </div>
+            <div class="myskills-section">
+                <div class="intro" style="text-align: center; margin-bottom: 3rem;">
+                    <h2 id="myfinch" style="font-size: 2rem; margin-bottom: 1rem;">
+                        Harnessing Software to Command Hardware: Finch Robot Project
+                    </h2>
+                    <p>
+                        This Finch robot project involves creating a program that takes a user-provided hexadecimal number, converts it through various numerical systems, and uses the results to control the robot's movements and LED colour.
+                    </p>
+                    <p>
+                        Please note, this project represents a basic version intended to ensure all required functionality works correctly. As this work stems from formal university submissions, it is not publicly released. This version is shared for educational purposes and to highlight the key aspects of the project.
+                    </p>
+                </div>
+                <div class="myskills-grid">
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Project Overview</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                This Finch Robot project exemplifies the seamless integration of software and hardware. It involves creating a program that takes user-provided hexadecimal inputs, converts these through various numerical systems, and uses the results to control the Finch robot's movements and LED colors. The project showcases essential programming skills such as user interaction, data validation, numerical conversions, and robotic control, providing a foundational understanding of how software can be harnessed to command hardware effectively.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Finch Robot</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                The Finch robot is an interactive robot designed to inspire and teach students about the principles of robotics and programming. It features a variety of sensors, lights, and wheels, enabling it to perform diverse tasks and movements. The Finch robot is user-friendly and supports multiple programming languages, making it an ideal educational tool for learners of all ages to experiment with and understand robotics, computational thinking, and problem-solving skills.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>User-Defined Functions</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                These user-defined functions were created to fulfill the project requirements while emphasising code reusability:
+                            </p>
+                            <p>
+                                <b>- main():</b> The main() function orchestrates the entire process, ensuring the program flow is maintained and each method is called in sequence to achieve the desired outcome. Starting only when the user is ready, prompting the user for their hexadecimal number, generating the numerical data and then controlling the Finch robot.
+                            </p>       
+                            <p>
+                                <b>- promptReady():</b> This method prompts the user to enter 'start' to begin the program or 'exit' to quit. It serves as an initial and restart checkpoint to determine whether the user wants to proceed or terminate the program.
+                            </p>   
+                            <p>
+                                <b>- promptInput():</b> This method asks the user to enter a hexadecimal number. It captures user input, ensuring the program receives the necessary data to process and convert.
+                            </p>      
+                            <p>
+                                <b>- checkSize():</b> This method checks if the entered hexadecimal number is of size 2. Ensures the input meets the required length, which is crucial for accurate processing and conversion.
+                            </p>     
+                            <p>
+                                <b>- checkBoundary():</b> This method checks if the hexadecimal digits are within the valid range (0-9, A-F). Validates the input, ensuring it falls within the allowable hexadecimal range to prevent errors during conversion.
+                            </p>   
+                            <p>
+                                <b>- generateBinary():</b> This method converts the hexadecimal input into its binary representation. Converts hexadecimal to binary, which is a crucial step in the sequence of conversions to reach the final results.
+                            </p>    
+                            <p>
+                                <b>- hexValue():</b> This method converts a single hexadecimal character into its decimal value.
+                            </p>
+                            <p>
+                                <b>- powerOf():</b> This method computes 2 raised to the power of the given integer. Used in binary to decimal conversion, making it essential for accurate calculation of decimal values.
+                            </p>
+                            <p>
+                                <b>- intToBinary():</b> This method converts a decimal value to its binary string representation. Integral part of the conversion process, ensuring each user digit is accurately represented in binary form.
+                            </p>
+                            <p>
+                                <b>binaryToDenary():</b> This method provides the decimal value of the binary string, which is used in further calculations. This denary value is used when calculating the intensity of LED colours of the Finch Robot.
+                            </p>
+                            <p>
+                                <b>denaryToOctal():</b> This method transforms the decimal value into octal, continuing the sequence of required conversions. This octal value is used to determine the speed of the Finch Robot.
+                            </p>
+                            <p>
+                                <b>- calculateSpeed():</b> This method calculates the speed for the Finch robot based on the octal value. Determines an appropriate speed value within specified limits for the robot's movement.
+                            </p>
+                            <p>
+                                <b>- generateRed():</b> This method generates the red component of the LED colour based on the decimal value. Sets the red colour intensity for the Finch robot's LED, contributing to visual feedback.
+                            </p>
+                            <p>
+                                <b>- generateGreen():</b> This method generates the green component of the LED colour based on the decimal value. Sets the green colour intensity for the Finch robot's LED, contributing to visual feedback.
+                            </p>
+                            <p>
+                                <b>- generateBlue():</b> This method generates the blue component of the LED colour by averaging the red and green values. Completes the RGB colour settings for the Finch robot's LED, contributing to visual feedback.
+                            </p>
+                            <p>
+                                <b>- moveFinch():</b> Executes the main actions of the Finch robot, setting the LED colour and moving forward or backward based on the binary input. This method brings all the computations to life by interacting with the physical robot.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Conclusion</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            In conclusion, this Finch robot project elegantly demonstrates the interplay between software and hardware, showcasing how user input and numerical conversions can be effectively utilised to control a robot’s movements and LED colours. By integrating various methods to handle inputs, process data, and execute commands, this project encapsulates the fundamental principles of robotics and programming. This basic version ensures all necessary functionalities are operational, providing a robust foundation for further enhancements.
+                        </div>
+                    </div>
+                </div>
+                <div class="GitHub-container">
+                    <a href="https://github.com/DPRJITIN/Finch-Dance" class="GitHub-button" id="view-GitHub">
+                        <div class="GitHub-content">
+                            <h3>
+                                View Project On GitHub
+                            </h3>
+                            <div class="GitHub-icon">
+                                <img src="../images/logos/GitHub.png" alt="GitHub Logo">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                © Copyright 2024 Jitin Kumar Verma
+            </p>
+        </footer>
+        <script src="../script.js"></script>
+        <script src="project.js"></script>
+    </body>
+</html>
