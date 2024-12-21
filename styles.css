@@ -482,8 +482,9 @@ body.light-mode footer {
 
 /* projects.html */
 .project-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     padding: 2.5rem;
     transition: all 0.3s ease;
@@ -580,8 +581,9 @@ body.light-mode footer {
 .skill-tag {
     padding: 0.5rem 1rem;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
     color: inherit;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -591,6 +593,11 @@ body.light-mode footer {
 .light-mode .skill-tag {
     background: rgba(0, 0, 0, 0.05);
     border-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .skill-tag {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
 }
 
 .skill-tag:hover {
