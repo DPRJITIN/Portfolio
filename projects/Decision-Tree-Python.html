@@ -7,6 +7,7 @@
             Decision Tree Python | Jitin Kumar Verma
         </title>
         <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="link.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
@@ -35,14 +36,120 @@
             </div>
         </nav>
         <main>
-            <div class="section coming-soon">
-                <div class="coming-soon-container">
-                    <h1>
-                        Coming Soon
-                    </h1>
-                    <div class="coming-soon-text">
-                        This page is currently under construction. Check back soon for a detailed description.
+            <div class="hero">
+                <h1>Decision Tree Python</h1>
+            </div>
+            <div class="myskills-section">
+                <div class="intro" style="text-align: center; margin-bottom: 3rem;">
+                    <h2 id="mydtpython" style="font-size: 2rem; margin-bottom: 1rem;">
+                        A Step-by-Step Guide in Python
+                    </h2>
+                    <p>
+                        This project involves building and visualising a Decision Tree model using Python and the "scikit-learn" library. The objective is to classify the Iris dataset, a benchmark dataset in machine learning. The project covers essential steps including data loading and pre-processing, model training, evaluation, and visualisation. By following this project, you will gain a thorough understanding of how to implement and interpret Decision Tree Models for classification tasks using Python. The steps explained on this page are also commented on the code, so you can follow along and understand each code block.
+                    </p>
+                    <p>
+                        If you want to explore Decision Trees more, click here: <a href="/projects/Decision-Tree-RStudio.html"><B>RStudio Decision Tree</B></a>
+                    </p>
+                </div>
+                <div class="myskills-grid">
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>What is a Decision Tree?</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                A Decision Tree is a machine learning model used for both classification and regression tasks. It works by splitting the data into subsets based on the value of input features. Each internal node represents a "decision" on a feature, each branch represents the outcome of the decision, and each leaf node represents a class label (classification) or a continuous value (regression). It's a tree-like structure where each decision leads to a final prediction.
+                            </p>                            
+                        </div>
                     </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Why Use Decision Tree?</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Decision Trees are popular because they are simple to understand and interpret. They mimic human decision-making processes, making them intuitive. Additionally, they require little data preprocessing and can handle both numerical and categorical data. Decision Trees are versatile, capable of solving a variety of tasks with relatively low computational cost. Moreover, they can be visualised easily, which helps in understanding the model and making decisions based on the insights gained from the tree.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 1: Import Necessary Libraries</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                In this step, we import essential libraries such as numpy, pandas, scikit-learn, matplotlib, and seaborn. These libraries provide the necessary tools for data manipulation, model building, evaluation, and visualisation.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 2: Load and Prepare the Dataset</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                We load the Iris dataset, a classic dataset in the machine learning community, using scikit-learn. The data is then split into training and testing sets to evaluate the performance of our model. This step ensures that the model is trained on one subset of the data and tested on another to measure its generalisation ability.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 3: Create and Train the Decision Tree Model</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Here, we initialise a DecisionTreeClassifier from scikit-learn and train it using the training data. This step involves the core machine learning process, where the model learns patterns from the input features to make predictions.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 4: Make Predictions and Evaluate the Model</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                We use the trained model to make predictions on the test set and then evaluate its performance using metrics such as accuracy, classification report, and confusion matrix. Visualisation of the confusion matrix helps in understanding the model's performance across different classes.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 5: Visualise the Decision Tree</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Finally, we visualise the decision tree using matplotlib and scikit-learn's plot_tree function. This visualisation provides an intuitive understanding of how the decision tree makes decisions based on the input features.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Summary</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            In this project, we successfully built and visualised a Decision Tree model using Python. We covered essential steps including data loading, model training, evaluation, and visualisation. This process demonstrates the practical application of Decision Tree algorithms in classification tasks, providing valuable insights into their functionality and interpretation.
+                        </div>
+                    </div>
+                </div>
+                <div class="GitHub-container">
+                    <a href="https://github.com/DPRJITIN/Decision-Tree-Python" class="GitHub-button" id="view-GitHub">
+                        <div class="GitHub-content">
+                            <h3>
+                                View Project On GitHub
+                            </h3>
+                            <div class="GitHub-icon">
+                                <img src="../images/logos/GitHub.png" alt="GitHub Logo">
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </main>
@@ -52,5 +159,6 @@
             </p>
         </footer>
         <script src="../script.js"></script>
+        <script src="project.js"></script>
     </body>
 </html>
