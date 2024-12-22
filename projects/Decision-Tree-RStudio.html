@@ -7,6 +7,7 @@
             Decision Tree RStudio | Jitin Kumar Verma
         </title>
         <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="link.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </head>
     <body>
@@ -35,14 +36,120 @@
             </div>
         </nav>
         <main>
-            <div class="section coming-soon">
-                <div class="coming-soon-container">
-                    <h1>
-                        Coming Soon
-                    </h1>
-                    <div class="coming-soon-text">
-                        This page is currently under construction. Check back soon for a detailed description.
+            <div class="hero">
+                <h1>Decision Tree RStudio</h1>
+            </div>
+            <div class="myskills-section">
+                <div class="intro" style="text-align: center; margin-bottom: 3rem;">
+                    <h2 id="mydtrstudio" style="font-size: 2rem; margin-bottom: 1rem;">
+                        A Step-by-Step Guide in RStudio
+                    </h2>
+                    <p>
+                        This project involves building and visualising a decision tree model using R and the rpart library. The goal is to classify the Iris dataset, a benchmark dataset in machine learning. The project covers essential steps including data loading and preparation, model training, pruning, evaluation, and visualisation. By following this project, you will gain a thorough understanding of how to implement and interpret decision tree models for classification tasks using R. The evaluation includes accuracy analysis to measure model performance effectively.
+                    </p>
+                    <p>
+                        If you want to explore Decision Trees more, click here: <a href="/projects/Decision-Tree-Python.html"><B>Python Decision Tree</B></a>
+                    </p>
+                </div>
+                <div class="myskills-grid">
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>What is a Decision Tree?</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                A Decision Tree is a machine learning model used for both classification and regression tasks. It works by splitting the data into subsets based on the value of input features. Each internal node represents a "decision" on a feature, each branch represents the outcome of the decision, and each leaf node represents a class label (classification) or a continuous value (regression). It's a tree-like structure where each decision leads to a final prediction.
+                            </p>                            
+                        </div>
                     </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Why Use Decision Tree?</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Decision Trees are popular because they are simple to understand and interpret. They mimic human decision-making processes, making them intuitive. Additionally, they require little data preprocessing and can handle both numerical and categorical data. Decision Trees are versatile, capable of solving a variety of tasks with relatively low computational cost. Moreover, they can be visualised easily, which helps in understanding the model and making decisions based on the insights gained from the tree.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 1: Import Necessary Libraries</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                We start by installing and loading the necessary packages. These libraries provide essential tools for building, evaluating, and visualising decision trees. The rpart library is used for creating the decision tree model, rpart.plot for visualising the tree, caret for splitting the data, e1071 for additional functions, and ggplot2 for creating visualisations.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 2: Load and Prepare the Dataset</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                We load the Iris dataset, which contains measurements of iris flowers and their species. We split the dataset into training and testing sets to ensure that we have separate data for training the model and evaluating its performance. Setting a seed ensures that the data split is reproducible.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 3: Create and Train the Decision Tree Model, Visualise the Model</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                We initialise and train the decision tree model using the rpart function. The model is trained to classify the species of Iris flowers based on their features (sepal length, sepal width, petal length, and petal width). Plotting the model provides an overview of the decision tree's structure and the rules it has learned from the training data.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 4: Make Predictions and Evaluate the Model</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                We use the trained model to make predictions on the test data and evaluate its performance using a confusion matrix. Visualising the confusion matrix helps us understand the model's performance across different classes. We calculate the accuracy to measure the overall correctness of the model and display with the confusion matrix for better understanding.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 5: Prune the Decision Tree and Plot</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Pruning is a technique used to reduce the complexity of the decision tree and prevent overfitting. By removing nodes that provide little predictive power, we create a simpler and more generalisable model. We prune the tree based on the complexity parameter (CP) that minimises cross-validation error. Plotting the pruned model summary allows us to compare it with the original tree and understand the changes made.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Summary</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            In this guide, we walked through the steps of creating, evaluating, pruning, and visualising a decision tree model using R and the rpart library. We loaded the Iris dataset, split it into training and testing sets, created and trained the decision tree model, made predictions, evaluated the model's performance using its accuracy, pruned the tree to avoid overfitting, and visualised the final pruned tree.
+                        </div>
+                    </div>
+                </div>
+                <div class="GitHub-container">
+                    <a href="https://github.com/DPRJITIN/Decision-Tree-RStudio" class="GitHub-button" id="view-GitHub">
+                        <div class="GitHub-content">
+                            <h3>
+                                View Project On GitHub
+                            </h3>
+                            <div class="GitHub-icon">
+                                <img src="../images/logos/GitHub.png" alt="GitHub Logo">
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </main>
@@ -52,5 +159,6 @@
             </p>
         </footer>
         <script src="../script.js"></script>
+        <script src="project.js"></script>
     </body>
 </html>
