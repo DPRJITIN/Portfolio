@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Linear Regression RStudio | Jitin Kumar Verma
+        </title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="link.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <a href="../index.html" class="logo">
+                    &lt;/&gt; Jitin Kumar Verma
+                </a>
+                <a href="../myjourney.html">
+                    My Journey
+                </a>
+                <a href="../skills.html">
+                    Skills
+                </a>
+                <a href="../projects.html">
+                    Projects
+                </a>
+                <a href="../resume.html">
+                    Resumé
+                </a>
+            </div>
+            <div class="nav-right">
+                <button id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <div class="hero">
+                <h1>Linear Regression RStudio</h1>
+            </div>
+            <div class="myskills-section">
+                <div class="intro" style="text-align: center; margin-bottom: 3rem;">
+                    <h2 id="mylrrstudio" style="font-size: 2rem; margin-bottom: 1rem;">
+                        A Step-by-Step Guide in RStudio
+                    </h2>
+                    <p>
+                        This project demonstrates a step-by-step guide to building a linear regression model using the Iris dataset in R. The Iris dataset is a well-known dataset that contains measurements of different flower species. Our objective is to predict the Sepal Length of the flowers based on other variables such as Sepal Width, Petal Length, and Petal Width.
+                    </p>
+                    <p>
+                        The project includes loading and exploring the dataset, splitting the data into training and testing sets, building and training the linear regression model, making predictions, evaluating the model's performance using RMSE, and visualising the results with scatter plots and residual lines. The visualisations help to assess the model's accuracy and identify any discrepancies between actual and predicted values.
+                    </p>
+                    <p>
+                        If you want to explore Linear Regression Models more, click here: <a href="/projects/Linear-Regression-Python.html"><B>Python Linear Regression</B></a>
+                    </p>
+                </div>
+                <div class="myskills-grid">
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>What is a Linear Regression?</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Linear Regression is a fundamental statistical technique used to model the relationship between a dependent variable and one or more independent variables. The goal is to fit a straight line through the data points that best predicts the dependent variable. The simplest form, known as Simple Linear Regression, involves one independent variable and is represented by the familiar equation "y = mx + c", where "y" is the dependent variable, "x" is the independent variable, "m" is the slope, and "c" is the intercept.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Why Use Linear Regression?</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Linear Regression is widely used because of its simplicity, interpretability, and efficiency. It provides a clear understanding of the relationships between variables and allows for easy interpretation of coefficients. This method is highly effective for making predictions when the relationship between variables is approximately linear. It's also computationally efficient, making it suitable for large datasets. Additionally, Linear Regression serves as a foundation for more complex regression methods, making it a valuable tool in both academic research and industry applications.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 1: Import Necessary Libraries</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                We start by installing and loading the necessary packages. These libraries provide essential tools for building, evaluating, and visualising the Linear Regression model. The datasets library is used for loading the Iris dataset, caTools for splitting the data, and ggplot2 for creating visualisations.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 2: Load and Explore the Dataset</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                We start by loading the Iris dataset, which is conveniently built into R, so we don't need to download anything. Exploring the dataset helps us understand its structure, the types of variables it contains, and the overall data distribution. This initial step is essential to get familiar with what we're working with.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 3: Split the Data</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Splitting the data into training and testing sets is crucial because it allows us to train the model on one part of the data and test its performance on unseen data. This helps ensure that the model generalises well to new data and isn't just memorising the training data.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 4: Train the Linear Regression Model</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Building and training the linear regression model helps us understand the relationship between the input variables (e.g., Sepal Width, Petal Length, Petal Width) and the target variable (Sepal Length). This step creates a mathematical model that predicts the target variable based on the input variables.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 5: Make Predictions and Evaluate the Model</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                After training the model, we use it to make predictions on the test set to see how well it performs on new data. Evaluating the model's performance using metrics like RMSE helps us measure the accuracy of the predictions.
+                            </p>     
+                            <p>
+                                RMSE stands for Root Mean Squared Error. It is a commonly used metric to evaluate the accuracy of a regression model. RMSE measures the average magnitude of the errors between the predicted values and the actual values.
+                            </p>                     
+                            <p>
+                                - Lower RMSE: Indicates that the model's predictions are closer to the actual values, which means the model is more accurate.
+                            </p>  
+                            <p>
+                                - Higher RMSE: Indicates that the model's predictions are further away from the actual values, which means the model is less accurate.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Step 6: Visualise the Results</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            <p>
+                                Visualisation helps us assess the model's performance visually. By creating scatter plots with residual lines, we can see how well the predicted values match the actual values and identify any discrepancies. This step provides a clear and intuitive understanding of the model's accuracy.
+                            </p>                            
+                        </div>
+                    </div>
+                    <div class="myskill-item">
+                        <div class="myskill-content">
+                            <h3>Summary</h3>
+                            <div class="expand-icon">▼</div>
+                        </div>
+                        <div class="myskill-details" style="display: none;">
+                            In this project, we successfully built a linear regression model to predict Sepal Length using the Iris dataset. By following the steps of loading and exploring the data, splitting it into training and testing sets, training the model, making predictions, and evaluating the results with visualisations and RMSE, we demonstrated the practical application of linear regression. The final visualisations provided insights into the model's accuracy and highlighted areas for potential improvement. This project serves as a valuable exercise in understanding and implementing linear regression in R.
+                        </div>
+                    </div>
+                </div>
+                <div class="GitHub-container">
+                    <a href="https://github.com/DPRJITIN/Linear-Regression-RStudio" class="GitHub-button" id="view-GitHub">
+                        <div class="GitHub-content">
+                            <h3>
+                                View Project On GitHub
+                            </h3>
+                            <div class="GitHub-icon">
+                                <img src="../images/logos/GitHub.png" alt="GitHub Logo">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                © Copyright 2024 Jitin Kumar Verma
+            </p>
+        </footer>
+        <script src="../script.js"></script>
+        <script src="project.js"></script>
+    </body>
+</html>
