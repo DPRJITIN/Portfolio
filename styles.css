@@ -7,6 +7,10 @@
     --accent: #3498db;
     --border-light: rgba(0, 0, 0, 0.1);
     --border-dark: rgba(255, 255, 255, 0.1);
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
 }
 
 body {
